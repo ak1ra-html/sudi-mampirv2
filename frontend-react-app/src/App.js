@@ -99,8 +99,6 @@ function App() {
 
 }, [userRole, activeTab]);
 
-}, [userRole]);
-
   useEffect(() => {
 
     if (!showShiftSummary || !isClosingShift) return;
