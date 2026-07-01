@@ -90,16 +90,14 @@ function App() {
   useEffect(() => {
 
     if (userRole === "kasir" && activeTab !== "kasir" && activeTab !== "antrian") {
-
         setActiveTab("kasir");
-
     }
 
     if (userRole === "admin" && activeTab === "kasir") {
-
         setActiveTab("laporan");
-
     }
+
+}, [userRole, activeTab]);
 
 }, [userRole]);
 
